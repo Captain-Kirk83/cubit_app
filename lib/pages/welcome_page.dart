@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:flutter_cubit/misc/colors.dart';
 import 'package:flutter_cubit/widgets/app_large_text.dart';
 import 'package:flutter_cubit/widgets/app_text.dart';
+import 'package:flutter_cubit/widgets/responsive_button.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -43,7 +44,7 @@ class _WelcomePageState extends State<WelcomePage> {
                             text: "Mountain",
                             size: 30,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           Container(
@@ -53,6 +54,12 @@ class _WelcomePageState extends State<WelcomePage> {
                                     "Mountain hikes give you an incredible sense of freedom along with endurance test",
                                 color: AppColors.textColor2,
                                 size: 14),
+                          ),
+                          const SizedBox(
+                            height: 40,
+                          ),
+                          ResponsiveButton(
+                            width: 120,
                           )
                         ],
                       )
